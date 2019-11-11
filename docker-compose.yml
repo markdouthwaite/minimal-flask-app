@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+  profile:
+    build:
+      context: ./profile
+
+  dashboard:
+    build:
+      context: ./dashboard
